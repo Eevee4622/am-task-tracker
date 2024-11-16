@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Customer Service Task Tracker</h1>
+    
+    <!-- Task Entry Form -->
+    <form id="taskForm">
+        <label for="taskDescription">Task Description:</label><br>
+        <textarea id="taskDescription" required></textarea><br><br>
+
+        <label for="taskStatus">Task Status:</label><br>
+        <select id="taskStatus" required>
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select><br><br>
+
+        <label for="teamMember">Assigned Team Member:</label><br>
+        <select id="teamMember" required>
+            <option value="John Doe">John Doe</option>
+            <option value="Jane Smith">Jane Smith</option>
+            <option value="Alice Brown">Alice Brown</option>
+        </select><br><br>
+
+        <label for="customerContact">Customer Contact:</label><br>
+        <input type="text" id="customerContact" required><br><br>
+
+        <label for="personInCharge">Person in Charge:</label><br>
+        <input type="text" id="personInCharge" required><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" required><br><br>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <hr>
+
+    <!-- Task List -->
+    <h2>Task List</h2>
+    <table id="taskList">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Assigned To</th>
+                <th>Customer</th>
+                <th>Person in Charge</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tasks will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
