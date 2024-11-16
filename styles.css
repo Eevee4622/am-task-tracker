@@ -59,3 +59,33 @@ th, td {
 th {
     background-color: #f4f4f4;
 }
+
+button.edit {
+    background-color: #ffa500;
+    color: white;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    th, td {
+        text-align: right;
+        padding-left: 50%;
+    }
+    th::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
